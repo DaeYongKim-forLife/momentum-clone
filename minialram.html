@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/style-mini.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini alram</title>
+  </head>
+  <body>
+    <header><h1>What time do you want ?</h1></header>
+    <form class="time-out">
+      <h2>From now to</h2>
+      <div class="time-out__column">
+        <input
+          class="time-out__hour"
+          min="0"
+          max="24"
+          placeholder="hour"
+          type="number"
+          required
+        />
+        <h2>h</h2>
+      </div>
+      <div class="time-out__column">
+        <input
+          class="time-out__minute"
+          placeholder="min"
+          min="0"
+          max="59"
+          type="number"
+          required
+        />
+        <h2>m</h2>
+      </div>
+      <div class="time-out__column">
+        <input
+          class="time-out__second"
+          placeholder="sec"
+          min="0"
+          max="59"
+          type="number"
+          required
+        />
+        <h2>s</h2>
+      </div>
+      <button class="hidden">
+        <a href="minialram-list.html"></a>
+      </button>
+    </form>
+    <ul class="time-out__list"></ul>
+    <script src="js/minialram.js"></script>
+  </body>
+</html>

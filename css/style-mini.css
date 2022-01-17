@@ -1,0 +1,30 @@
+body {
+  background-color: midnightblue;
+  color: gold;
+}
+.hidden {
+  display: none;
+}
+.time-out {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid goldenrod;
+}
+.time-out h2 {
+  width: 31%;
+}
+.time-out__column {
+  display: flex;
+  width: 23%;
+  justify-content: center;
+  align-items: center;
+}
+.time-out__column input {
+  background-color: midnightblue;
+  width: 50px;
+  height: 20px;
+  border: none;
+  color: gold;
+  border-bottom: 1px solid gold;
+}
