@@ -1,8 +1,28 @@
-const rangeForm = document.querySelector(".range-form");
+const userForm = document.querySelector(".user-form");
+const score = document.querySelector(".score")
+const result = document.querySelector(".result")
 
-function handleToRange(value) {
+function handleTovalue(value) {
   value.preventDefault()
-  console.log(value);
+  const range = value.target[0].value;
+  const guessNum = value.target[1].value;
+  const machineNum = Math.ceil(Math.random() * range)
+  
+  handleToScore(guessNum,machineNum)
+  handleToResult(guessNum,machineNum)
 }
 
-rangeForm.addEventListener("submit", handleToRange);
+function handleToScore(guessNum,machineNum) {
+  score.innerText = `You chose:${guessNum},the machine chose:${machineNum}`
+}
+function handleToResult(guessNum, machineNum) {
+  console.log(guessNum, machineNum)
+  if (guessNum == machineNum) {
+    result.innerText = `You win`
+  } else {
+    result.innerText = `You lose`
+  };
+}
+
+
+userForm.addEventListener("submit", handleTovalue);
