@@ -26,3 +26,4 @@ function handleToResult(guessNum, machineNum) {
 
 
 userForm.addEventListener("submit", handleTovalue);
+
