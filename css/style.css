@@ -1,3 +1,5 @@
+@import "variables.css";
+
 .hidden {
   display: none;
 }
@@ -20,20 +22,20 @@ body {
 }
 header {
   background-color: rgba(0, 0, 0, 0.1);
-  color: #eae0e2;
+  color: var(--moon);
   font-size: 80px;
   font-family: "Luxurious Roman", cursive;
 }
 label {
   margin-top: 400px;
   background-color: rgba(0, 0, 0, 0);
-  color: #eae0e2;
+  color: var(--moon);
   font-size: 50px;
   font-family: "Luxurious Roman", cursive;
 }
 
 .login-form input {
-  color: #eae0e2;
+  color: var(--moon);
   font-size: larger;
   border: none;
   outline: none;
@@ -46,5 +48,10 @@ label {
 }
 .login-form input:focus {
   width: 400px;
-  border-bottom: 3px solid #eae0e2;
+  border-bottom: 3px solid var(--moon);
+}
+#quote-author,
+#quote-content,
+#weather {
+  color: var(--moon);
 }
