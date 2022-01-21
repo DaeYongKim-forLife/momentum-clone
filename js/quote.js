@@ -4,7 +4,7 @@ const quote = [{ author: "-asd-", content: "asd" },
 const spanAuthor = document.querySelector("#quote-author");
 const spanContent = document.querySelector("#quote-content");
 const author = quote.author;
-const quoteNum = Math.floor(Math.random() * 3);
+const quoteNum = Math.floor(Math.random() * quote.length);
 spanAuthor.innerText = quote[quoteNum].author
 spanContent.innerText = quote[quoteNum].content
 
