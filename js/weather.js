@@ -8,7 +8,7 @@ function onGeoOk(position) {
         const weather= document.querySelector("#weather span:first-child")
         const city = document.querySelector("#weather span:last-child")
         city.innerText = data.name;
-        console.log(data)
+        console.dir(data)
         const currentWeather = data.weather[0].main
         if (currentWeather === 'Clear') {
             weather.insertAdjacentHTML("beforebegin",'<i class="far fa-sun fa-lg"></i>')

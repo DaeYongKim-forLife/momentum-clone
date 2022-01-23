@@ -15,6 +15,7 @@ function getName(event) {
     loginForm.classList.add("hidden")
     loginText.innerText = `Hello! ${event}`;
     todoForm.classList.remove("hidden");
+    todoForm.autofocus = true;
 }
 
 
