@@ -1,0 +1,16 @@
+.todo-form input {
+  color: var(--moon);
+  font-size: larger;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  transition: 1s ease-in-out;
+}
+.todo-form input:focus {
+  width: 400px;
+  border-bottom: 3px solid var(--moon);
+}
