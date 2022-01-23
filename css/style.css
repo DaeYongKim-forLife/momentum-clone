@@ -1,4 +1,5 @@
 @import "variables.css";
+@import "screen/greeting.css";
 
 .hidden {
   display: none;
@@ -26,30 +27,7 @@ header {
   font-size: 80px;
   font-family: "Luxurious Roman", cursive;
 }
-label {
-  margin-top: 400px;
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--moon);
-  font-size: 50px;
-  font-family: "Luxurious Roman", cursive;
-}
 
-.login-form input {
-  color: var(--moon);
-  font-size: larger;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0);
-  width: 250px;
-  height: 30px;
-  text-align: center;
-  margin-top: 50px;
-  transition: 1s ease-in-out;
-}
-.login-form input:focus {
-  width: 400px;
-  border-bottom: 3px solid var(--moon);
-}
 #quote-author,
 #quote-content,
 #weather {
