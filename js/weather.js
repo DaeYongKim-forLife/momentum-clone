@@ -9,11 +9,20 @@ function onGeoOk(position) {
         const city = document.querySelector("#weather span:last-child")
         city.innerText = data.name;
         console.log(data)
-        weather.innerText = `${data.weather[0].main}/${data.main.temp}`;
+        const currentWeather = data.weather[0].main
+        if (currentWeather === 'Clear') {
+            weather.insertAdjacentHTML("beforebegin",'<i class="far fa-sun fa-lg"></i>')
+            weather.innerText = `${data.main.temp}`;  
+        } else if (currentWeather === 'Clouds') {
+            weather.insertAdjacentHTML("beforebegin",'<i class="fas fa-cloud fa-lg"></i>')
+            weather.innerText = `${data.main.temp}`;
+        } else {
+            weather.innerText = `${currentWeather}/${data.main.temp}`;
+        }
     })
 }
 function onGeoError() {
-    alert("Oh no!0");
+    alert("You live in wonder-land!");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
