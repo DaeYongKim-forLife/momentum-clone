@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:wght@400;600&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
   <body>
     <header id="clock">00:00:00</header>
     <label for="name">What is your star?</label>
-    <form class="login-form">
+    <form class="login-form hidden">
       <input
         id="name"
         autofocus
@@ -28,7 +28,7 @@
       <button class="hidden">Log in</button>
     </form>
 
-    <span></span>
+    <span class="username"></span>
     <form class="todo-form hidden">
       <input type="text" required placeholder="Wrtie your to do" />
     </form>
