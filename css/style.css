@@ -1,5 +1,7 @@
 @import "variables.css";
-@import "screen/greeting.css";
+@import "component/greeting.css";
+@import "component/todoform.css";
+@import "component/todolist.css";
 
 .hidden {
   display: none;
@@ -12,22 +14,23 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  object-position: none;
+  object-fit: fill;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 header {
   background-color: rgba(0, 0, 0, 0.1);
   color: var(--moon);
   font-size: 80px;
-  font-family: "Luxurious Roman", cursive;
+  position: absolute;
+  top: 50px;
+  font-family: var(--ubuntu);
 }
-
 #quote-author,
 #quote-content,
 #weather {

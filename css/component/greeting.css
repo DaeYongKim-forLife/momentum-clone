@@ -3,7 +3,7 @@ label {
   background-color: rgba(0, 0, 0, 0);
   color: var(--moon);
   font-size: 50px;
-  font-family: "Luxurious Roman", cursive;
+  font-family: var(--ubuntu);
 }
 
 .login-form input {
@@ -21,4 +21,9 @@ label {
 .login-form input:focus {
   width: 400px;
   border-bottom: 3px solid var(--moon);
+}
+.username {
+  color: var(--moon);
+  font-size: 25px;
+  font-family: var(--ubuntu);
 }
